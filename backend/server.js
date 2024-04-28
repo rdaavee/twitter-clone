@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true })); //to parse from data
 app.use(cookieParser()); // to be able to get the cookies
 
 app.use("/api/auth", authRoutes); //middleware
-app.use("/api/user", userRoutes);
+app.use("/api/users", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
